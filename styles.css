@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #e8e8e8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout */
+.prototype-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.phone {
+  width: 440px;
+  background: white;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+/* Status Bar */
+.status-bar {
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  padding: 14px 18px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0066cc;
+  cursor: pointer;
+}
+
+.term-selector {
+  background: #f0f0f0;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8f8f8;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+
+.search-box input {
+  border: none;
+  background: transparent;
+  flex: 1;
+  font-size: 14px;
+  outline: none;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.checkbox input {
+  width: 16px;
+  height: 16px;
+}
+
+.badge {
+  background: #990000;
+  color: white;
+  border-radius: 10px;
+  padding: 2px 6px;
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+/* Content */
+.content {
+  padding: 18px;
+}
+
+/* Course Header */
+.course-header {
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.course-header h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.course-header h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.course-header p {
+  font-size: 13px;
+  color: #666;
+  margin: 3px 0;
+}
+
+.enrollment-yellow {
+  font-weight: 600;
+  color: #f57c00;
+}
+
+/* Generic Section */
+.section {
+  margin-bottom: 18px;
+}
+
+.section h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.section p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Degree Contribution Box */
+.degree-box {
+  background: #f0f8f0;
+  border: 2px solid #4caf50;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 18px;
+}
+
+.degree-box h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.degree-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #4caf50;
+  margin-bottom: 6px;
+}
+
+.degree-chip .check {
+  width: 18px;
+  height: 18px;
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.degree-chip span:last-child {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1b5e20;
+}
+
+.or-badge {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  color: #666;
+  margin: 4px 0;
+}
+
+/* Syllabus Box */
+.syllabus-box {
+  background: #fff5f5;
+  border: 2px solid #B22C2C;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 18px;
+}
+
+.syllabus-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #990000;
+}
+
+/* PCR Box */
+.pcr-box {
+  background: #f9f9f9;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.ratings {
+  margin-bottom: 12px;
+}
+
+.rating-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rating {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.rating.green {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.rating.blue {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tags span {
+  background: #e0e0e0;
+  color: #333;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.quote {
+  background: white;
+  border-left: 3px solid #0066cc;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.quote p {
+  font-size: 12px;
+  color: #555;
+}
+
+/* Section Selection Box */
+.section-box {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+.section-box.selected {
+  background: #e8f5e9;
+  border: 2px solid #4caf50;
+}
+
+.section-box input {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #4caf50;
+}
+
+.section-box p {
+  font-size: 12px;
+  color: #555;
+  margin: 2px 0;
+}
+
+.section-box strong {
+  font-size: 13px;
+  color: #000;
+}
+
+/* Buttons */
+.btn-outline {
+  background: white;
+  color: #0066cc;
+  border: 1px solid #0066cc;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-primary {
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.btn-action {
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.btn-action.red {
+  background: #990000;
+  color: white;
+}
+
+.btn-action.gray {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #d0d0d0;
+}
